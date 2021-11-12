@@ -1,11 +1,6 @@
 resource "aws_eip_association" "bastion" {
-  instance_id = aws_instance.bastion.id
-  allocation_id = aws_eip.bastion.id
+  instance_id = aws_instance.aaa_ec2_aaa.id
+  allocation_id = var.aws_eip-aaa_ec2_aaa-id
 
-  network_interface_id = aws_network_interface.bastion.id
-
-  depends_on = [
-    aws_eip.bastion,
-    aws_network_interface.bastion
-  ]
+  network_interface_id = var.aws_nis-aaa_ec2_aaa-id
 }

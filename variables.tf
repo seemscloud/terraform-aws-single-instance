@@ -1,67 +1,59 @@
-variable "region" {
-  type = string
-}
-
 # VPC
-variable "vpc_name" {
+variable "aaa_vpc_aaa" {
   type = string
 }
 
-variable "vpc_cidr_block" {
+variable "aaa_vpc_aaa-cidr_block" {
   type = string
 }
 
 # VPC - Defaults
-variable "default_igw_name" {
+variable "aaa_vpc_aaa-default_rtb" {
   type = string
 }
 
-variable "default_rtb_name" {
+variable "aaa_vpc_aaa-default_acl" {
   type = string
 }
 
-variable "default_acl_name" {
-  type = string
-}
-
-variable "default_sg_name" {
+variable "aaa_vpc_aaa-default_sg" {
   type = string
 }
 
 # VPC - Subnets
-variable "vpc_subnet_bastion_name" {
+variable "aaa_subnet_aaa" {
   type = string
 }
 
-variable "vpc_subnet_bastion_cidr_block" {
+variable "aaa_subnet_aaa-cidr_block" {
   type = string
 }
 
 # Instance - Bastion
-variable "instance_bastion_name" {
+variable "aaa_ec2_aaa" {
   type = string
 }
 
-variable "instance_bastion_type" {
+variable "aaa_ec2_aaa-type" {
   type = string
 }
 
-variable "instance_bastion_rbd_type" {
+variable "aaa_ec2_aaa-rbd_type" {
   type = string
 }
 
-variable "instance_bastion_rbd_size" {
+variable "aaa_ec2_aaa-rbd_size" {
   type = string
 }
 
-variable "instance_bastion_abd_type" {
+variable "aaa_ec2_aaa-abd_type" {
   type = string
 }
 
-variable "instance_bastion_abd_size" {
+variable "aaa_ec2_aaa-abd_size" {
   type = string
 }
 
-variable "instance_bastion_ami" {
+variable "aaa_ec2_aaa-ami" {
   type = string
 }

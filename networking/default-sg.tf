@@ -1,5 +1,5 @@
-resource "aws_default_security_group" "default-sg" {
-  vpc_id = aws_vpc.network.id
+resource "aws_default_security_group" "aaa_vpc_aaa-default_sg" {
+  vpc_id = aws_vpc.aaa_vpc_aaa.id
 
   ingress {
     protocol = -1
@@ -18,9 +18,9 @@ resource "aws_default_security_group" "default-sg" {
   }
 
   tags = {
-    Name = var.default_sg_name
+    Name = var.aaa_vpc_aaa-default_sg
   }
 
   depends_on = [
-    aws_vpc.network]
+    aws_vpc.aaa_vpc_aaa]
 }

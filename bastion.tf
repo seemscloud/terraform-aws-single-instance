@@ -1,29 +1,26 @@
 module "bastion" {
   source = "./bastion"
 
-  region = var.region
+  # Security Groups
+  aws_sg-aaa_ec2_aaa-id = module.networking.aws_sg-aaa_ec2_aaa-id
 
-  # VPC - Defaults
-  default_rtb_id = module.networking.default_rtb_id
-  default_sg_id = module.networking.default_sg_id
+  # Network Interfaces
+  aws_nis-aaa_ec2_aaa-id = module.networking.aws_nis-aaa_ec2_aaa-id
 
-  # VPC - Subnet
-  vpc_subnet_bastion_id = module.networking.vpc_subnet_bastion_id
-
-  # VPC - Security Groups
-  instance_bastion_sg_id = module.networking.instance_bastion_sg_id
+  # Elastic IP
+  aws_eip-aaa_ec2_aaa-id = module.networking.aws_eip-aaa_ec2_aaa-id
 
   # Instance - Bastion
-  instance_bastion_name = local.instance_bastion_name
-  instance_bastion_type = var.instance_bastion_type
-  instance_bastion_rbd_type = var.instance_bastion_rbd_type
-  instance_bastion_rbd_size = var.instance_bastion_rbd_size
-  instance_bastion_abd_type = var.instance_bastion_abd_type
-  instance_bastion_abd_size = var.instance_bastion_abd_size
-  instance_bastion_ami = var.instance_bastion_ami
+  aaa_ec2_aaa = local.aaa_ec2_aaa
+  aaa_ec2_aaa-type = var.aaa_ec2_aaa-type
+  aaa_ec2_aaa-rbd_type = var.aaa_ec2_aaa-rbd_type
+  aaa_ec2_aaa-rbd_size = var.aaa_ec2_aaa-rbd_size
+  aaa_ec2_aaa-abd_type = var.aaa_ec2_aaa-abd_type
+  aaa_ec2_aaa-abd_size = var.aaa_ec2_aaa-abd_size
+  aaa_ec2_aaa-ami = var.aaa_ec2_aaa-ami
 
   # Key Pairs
-  key_pair_deployer_name = aws_key_pair.deployer.key_name
+  aaa_key_pair_aaa = aws_key_pair.aaa_key_pair_aaa.key_name
 
   dependencies = [
     "module.networking"]

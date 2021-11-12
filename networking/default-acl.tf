@@ -1,5 +1,5 @@
-resource "aws_default_network_acl" "default-acl" {
-  default_network_acl_id = aws_vpc.network.default_network_acl_id
+resource "aws_default_network_acl" "aaa_vpc_aaa-default_acl" {
+  default_network_acl_id = aws_vpc.aaa_vpc_aaa.default_network_acl_id
 
   ingress {
     rule_no = 100
@@ -25,9 +25,9 @@ resource "aws_default_network_acl" "default-acl" {
   }
 
   tags = {
-    Name = var.default_acl_name
+    Name = var.aaa_vpc_aaa-default_acl
   }
 
   depends_on = [
-    aws_vpc.network]
+    aws_vpc.aaa_vpc_aaa]
 }

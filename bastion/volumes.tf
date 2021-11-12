@@ -1,10 +1,10 @@
-resource "aws_ebs_volume" "bastion" {
-  availability_zone = aws_instance.bastion.availability_zone
+resource "aws_ebs_volume" "aaa_ec2_aaa" {
+  availability_zone = aws_instance.aaa_ec2_aaa.availability_zone
 
-  type = var.instance_bastion_abd_type
-  size = var.instance_bastion_abd_size
+  size = var.aaa_ec2_aaa-abd_size
+  type = var.aaa_ec2_aaa-abd_type
 
   tags = {
-    Name = "${var.instance_bastion_name}-additional"
+    Name = "${var.aaa_ec2_aaa}-additional"
   }
 }

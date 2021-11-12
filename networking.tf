@@ -2,19 +2,18 @@ module "networking" {
   source = "./networking"
 
   # VPC
-  vpc_name = local.vpc_name
-  vpc_cidr_block = var.vpc_cidr_block
+  aaa_vpc_aaa = local.aaa_vpc_aaa
+  aaa_vpc_aaa-cidr_block = var.aaa_vpc_aaa-cidr_block
 
   # VPC - Defaults
-  default_igw_name = local.default_igw_name
-  default_rtb_name = local.default_rtb_name
-  default_acl_name = local.default_acl_name
-  default_sg_name = local.default_sg_name
+  aaa_vpc_aaa-default_rtb = local.aaa_vpc_aaa-default_rtb
+  aaa_vpc_aaa-default_acl = local.aaa_vpc_aaa-default_acl
+  aaa_vpc_aaa-default_sg = local.aaa_vpc_aaa-default_sg
 
   # VPC - Subnets
-  vpc_subnet_bastion_name = local.vpc_subnet_bastion_name
-  vpc_subnet_bastion_cidr_block = var.vpc_subnet_bastion_cidr_block
+  aaa_subnet_aaa = local.aaa_subnet_aaa
+  aaa_subnet_aaa-cidr_block = var.aaa_subnet_aaa-cidr_block
 
   # Instance - Bastion
-  instance_bastion_sg_name = local.instance_bastion_name
+  aaa_ec2_aaa = local.aaa_ec2_aaa
 }

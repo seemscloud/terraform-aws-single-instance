@@ -1,14 +1,10 @@
-provider "aws" {
-  region = var.region
-}
-
 resource "random_string" "random" {
   length = 8
   special = false
   upper = false
 }
 
-resource "aws_key_pair" "deployer" {
+resource "aws_key_pair" "aaa_key_pair_aaa" {
   key_name   = "deployer"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDzBN74p3jEDTcupqIeD/MFZRAbPnELmSnJGbqbpknpKXpiCrnqqOdqnR+snoCDnhHzRV84Xk+BNvbhLRgxR7Lz2xCTeyzYbntJgupClDq0fPBUBaWTyZep2wEfPOx9Nj3z7fY0WVhmYgF264upIskIZ2YF0ewwhhGpwirFRe0PCRr0tXFY/qQ50xBh0NCtK0Kg2txph6cjZ+t6r0+42GA6eQxfSL/TP/j3PTXlygnLFQ/8jD9SaVAKdEeuB45WVEUa+V8vGc4GOqehdgnaivS5XhxDjL+aK3TeBSiECg5a+Qgeq+QKReQbauZLTDmRd/poVXdcNpNZsVeUWYSP/ntmAEcMM74rUKYUCE/NT1n+SHSgCG58thRqYFbHTJGdigLcocf57uCNoWAjzYvo8Xrhl7s3ACFtpggC0DMlkpWMH2IOiZca+7TXa2i+fvNoRJyPSujuND5wfvN6zxu6VKvHu0v+QIA6RWBdAj/bDUjxvq/uKNizWCru4G2RpTwuXuE="
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDbOKNMrl4zNH4eE5BsA3u2GSnZJ17+SxVyPlGowfPUZgr169Pzla8G2ZkoLSR1SJ7K835qS83HOlzpoux/kwJr8X+VyVECcrJ+h+c6BQZATsXb+GKfq69E9XY9nmYfv8dPWMKVwuloQec6c704sgg0H7M4frD/lxLf5T7I6dIob3feNvWFFuUGQ/hDwz3KBNPUVEVWZG4SOxpwtdlCX1Ad2Yl6Ljac+iAveEbJ08szTjVGj9soRN5pDn8boGTdDZma2PdWT8kn4rKGqx/PpMktcJ1nPIIpX39TMSBcqZHI2TLgCrT6Pe12k7jve+eSZUHu9yaJCUgAIkWjPovPPObErkpdQDq8bsL1OHg1eRU6ixxqj5KcdUbHGl2C3+CSA8eJk+jPfdWWtl1RQG0Up1VLNgZrSSDgb1/x3IVXh1YR+k7Cf2CCftSuA4c9I3zeRivp82Z8VZezvPQYmL1t2+mU9QVuBk41L1M4qBlWhrqhVecPzJ+n7jP1t9a8s800+fk="
 }

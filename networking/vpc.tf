@@ -1,9 +1,9 @@
-resource "aws_vpc" "network" {
-  cidr_block = var.vpc_cidr_block
+resource "aws_vpc" "aaa_vpc_aaa" {
+  cidr_block = var.aaa_vpc_aaa-cidr_block
 
   enable_dns_hostnames = true
 
   tags = {
-    Name = var.vpc_name
+    Name = var.aaa_vpc_aaa
   }
 }

@@ -1,39 +1,35 @@
 # VPC
-variable "vpc_name" {
+variable "aaa_vpc_aaa" {
   type = string
 }
 
-variable "vpc_cidr_block" {
+variable "aaa_vpc_aaa-cidr_block" {
   type = string
 }
 
 # VPC - Defaults
-variable "default_igw_name" {
+variable "aaa_vpc_aaa-default_rtb" {
   type = string
 }
 
-variable "default_rtb_name" {
+variable "aaa_vpc_aaa-default_acl" {
   type = string
 }
 
-variable "default_acl_name" {
-  type = string
-}
-
-variable "default_sg_name" {
+variable "aaa_vpc_aaa-default_sg" {
   type = string
 }
 
 # VPC - Subnets
-variable "vpc_subnet_bastion_name" {
+variable "aaa_subnet_aaa" {
   type = string
 }
 
-variable "vpc_subnet_bastion_cidr_block" {
+variable "aaa_subnet_aaa-cidr_block" {
   type = string
 }
 
 # VPC - Security Groups
-variable "instance_bastion_sg_name" {
+variable "aaa_ec2_aaa" {
   type = string
 }

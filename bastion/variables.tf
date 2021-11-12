@@ -1,57 +1,49 @@
-variable "region" {
+# Security Groups
+variable "aws_sg-aaa_ec2_aaa-id" {
   type = string
 }
 
-# VPC - Defaults
-variable "default_rtb_id" {
+# Network Interfaces
+variable "aws_nis-aaa_ec2_aaa-id" {
   type = string
 }
 
-variable "default_sg_id" {
-  type = string
-}
-
-# VPC - Subnets
-variable "vpc_subnet_bastion_id" {
-  type = string
-}
-
-# VPC - Security Groups
-variable "instance_bastion_sg_id" {
+# Elastic IP
+variable "aws_eip-aaa_ec2_aaa-id" {
   type = string
 }
 
 # Instance - Bastion
-variable "instance_bastion_name" {
+variable "aaa_ec2_aaa" {
   type = string
 }
 
-variable "instance_bastion_type" {
+variable "aaa_ec2_aaa-type" {
   type = string
 }
 
-variable "instance_bastion_ami" {
+variable "aaa_ec2_aaa-rbd_type" {
   type = string
 }
 
-variable "instance_bastion_rbd_type" {
+variable "aaa_ec2_aaa-rbd_size" {
   type = string
 }
 
-variable "instance_bastion_rbd_size" {
+variable "aaa_ec2_aaa-abd_type" {
   type = string
 }
 
-variable "instance_bastion_abd_type" {
+variable "aaa_ec2_aaa-abd_size" {
   type = string
 }
 
-variable "instance_bastion_abd_size" {
+variable "aaa_ec2_aaa-ami" {
   type = string
 }
 
 # Key Pairs
-variable "key_pair_deployer_name" {
+variable "aaa_key_pair_aaa" {
   type = string
 }
 
