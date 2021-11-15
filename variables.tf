@@ -46,6 +46,14 @@ variable "aaa_ec2_aaa-rbd_size" {
   type = string
 }
 
+variable "aaa_ec2_aaa-abd_count" {
+  type = number
+}
+
+variable "aaa_ec2_aaa-abd_names" {
+  type = list(string)
+}
+
 variable "aaa_ec2_aaa-abd_type" {
   type = string
 }

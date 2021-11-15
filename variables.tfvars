@@ -16,6 +16,13 @@ aaa_ec2_aaa = "bastion"
 aaa_ec2_aaa-type = "c5.2xlarge"
 aaa_ec2_aaa-rbd_type = "gp2"
 aaa_ec2_aaa-rbd_size = "100"
+aaa_ec2_aaa-abd_count = 4
+aaa_ec2_aaa-abd_names = [
+  "/dev/sdj",
+  "/dev/sdd",
+  "/dev/sdf",
+  "/dev/sdh",
+]
 aaa_ec2_aaa-abd_type = "gp2"
-aaa_ec2_aaa-abd_size = "20"
+aaa_ec2_aaa-abd_size = "50"
 aaa_ec2_aaa-ami = "ami-036d46416a34a611c"

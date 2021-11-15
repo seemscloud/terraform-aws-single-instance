@@ -15,6 +15,8 @@ module "bastion" {
   aaa_ec2_aaa-type = var.aaa_ec2_aaa-type
   aaa_ec2_aaa-rbd_type = var.aaa_ec2_aaa-rbd_type
   aaa_ec2_aaa-rbd_size = var.aaa_ec2_aaa-rbd_size
+  aaa_ec2_aaa-abd_count = var.aaa_ec2_aaa-abd_count
+  aaa_ec2_aaa-abd_names = var.aaa_ec2_aaa-abd_names
   aaa_ec2_aaa-abd_type = var.aaa_ec2_aaa-abd_type
   aaa_ec2_aaa-abd_size = var.aaa_ec2_aaa-abd_size
   aaa_ec2_aaa-ami = var.aaa_ec2_aaa-ami
