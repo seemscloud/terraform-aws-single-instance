@@ -24,5 +24,5 @@ aaa_ec2_aaa-abd_names = [
   "/dev/sdh",
 ]
 aaa_ec2_aaa-abd_type = "gp2"
-aaa_ec2_aaa-abd_size = "100"
+aaa_ec2_aaa-abd_size = "1000"
 aaa_ec2_aaa-ami = "ami-036d46416a34a611c"
