@@ -15,7 +15,7 @@ aaa_subnet_aaa-cidr_block = "172.31.100.0/24"
 aaa_ec2_aaa = "bastion"
 aaa_ec2_aaa-type = "c5.2xlarge"
 aaa_ec2_aaa-rbd_type = "gp2"
-aaa_ec2_aaa-rbd_size = "100"
+aaa_ec2_aaa-rbd_size = "500"
 aaa_ec2_aaa-abd_count = 4
 aaa_ec2_aaa-abd_names = [
   "/dev/sdj",
